@@ -93,4 +93,5 @@ def get_models_between(start_year, end_year):
 # 2. In your own words, what is an association table, and what *type* of relationship
 # does an association table manage?
 	# An association table is a table which has the sole purpose of connecting two other tables together. It does not 
-	# contain any unique attributes of its own other than the primary keys of the tables it is connecting. 
+	# contain any unique attributes of its own other than the primary keys of the tables it is connecting. The association table 
+	# manages many to many relationships. 
