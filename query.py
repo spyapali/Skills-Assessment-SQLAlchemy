@@ -63,10 +63,13 @@ def get_brands_summary():
     cars = Brand.query.all()
 
     for car in cars:
+    	# Creating an empty list to store names of models associated 
+    	# with each brand. 
     	model_cars_list = []
     	car_models = car.models
     	for car_model in car_models:
     		model_cars_list.append(car_model.name)
+    	# Making the list a set to remove duplicate models Model objects would share.
     	model_cars_list = set(model_cars_list)
     	print car.name + ":"
     	for model_car in model_cars_list:
